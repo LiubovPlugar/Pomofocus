@@ -1,15 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf8" />
-    <title>your project name</title>
+<html lang='en'>
 
-    <link href="./public/style.css" rel="stylesheet" />
-  </head>
+<head>
+  <meta charset='utf8'>
+  <title>Promofocus</title>
 
-  <body>
-    <div id="user-interface"></div>
+  <link href="./public/style.css" rel="stylesheet" />
 
+</head>
+
+<body>
+  <main>
+    <div id="user-interface">
+      <div class="wrapper">
+        <div class="navbar">
+          <div class="navbar-wrapper">
+            <h1 class="logo">
+              <a href="https://liubovplugar.github.io/Pomofocus/">
+               <img src="./public/icons/icon-white.png" alt="pomofoucs icon" class = "logo-icon">
+                Pomofocus
+              </a>
+            </h1>
+            <span class="btn-container ">
+              <button class="navbar-btn">
+                <img src="./public/icons/graph-white.png" alt="graph icon" class="btn-icon-navbar">
+                <div class="icon-btn-wrapper">Report</div>
+              </button>
+              <button class="navbar-btn">
+                <img src="./public/icons/config-white.png" alt="config icon" class="btn-icon-navbar">
+                <div class="icon-btn-wrapper">Setting</div>
+              </button>
+              <div class="login-wrapper">
+                <button class="navbar-btn">
+                  <img src="./public/icons/user-white.png" alt="" class="btn-icon-navbar">
+                  <div class="icon-btn-wrapper">Login</div>
+                </button>
+              </div>
+            </span>
+          </div>
+        </div>
+        <div>
+            <div class="todo-wrapper">
+              <div class="todo-wrapper-border">
+                <div class="todo-border" id="progress-bar"></div>
+              </div>
+              <div class="time-wrapper">
+                <div class="time-box">
+                  <div class="time-btn-wrapper">
+                    <button class="time-btn-active"id="pomodoro">Pomodoro</button>
+                    <button class="time-btn"id="short-break">Short Break</button>
+
+                    <button class="time-btn"id ="long-break">Long Break</button>
+                  </div>
+                  <div id="timer-string" class="time-count">25:00</div>
+                  <button id="start-btn" color="color="hsl(2, 84%, 64%)" class="time-count-btn">START</button>
+                </div>
+                <div class="start-work">Time to work!</div>
+              </div>
+              <div class="task-container">
+                <div class="task-list">
+                  <span class="task">Tasks</span>
+                  <div class="task-icon-container">
+                    <button class="task-btn">
+                      <img src="./public/icons/threedots-white.png" alt="" class="task-icon">
+                    </button>
+                  </div>
+                </div>
+                <div class="task-border"></div>
+                <div class="add-task-container">
+                  <img src="./public/icons/plus-circle-white.png" alt="" class="add-task-icon">
+                  <div class="add-task">Add Task</div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+   
     <!-- initialize your application -->
     <script type="module" src="./src/init/index.js"></script>
 
